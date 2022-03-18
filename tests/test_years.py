@@ -35,4 +35,10 @@ def test_test_year_Underflow_api():
     assert response.status_code == 200
     assert response.json() == {"age": output}
 
+# def test_date_today_api():
+#     input = date.today().year + 543 + 1
+#     output = "unable to calculate"
+#     response = client.get("/service/getage?year="+str(input))
+#     assert response.status_code == 200
+#     assert response.json() == {"msg": output}
    
